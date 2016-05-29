@@ -1,0 +1,53 @@
+.switch-buttons-wrapper {
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .button-holder {
+        margin-bottom: 20px;
+        .button {
+            display: block;
+
+            border-width: 6px;
+            border-color: transparent;
+            background-color: #f7f7fa;
+            box-shadow: 0 0 2px #6e768f;
+        }
+        input[type="radio"] {
+            display: none;
+            &:checked + .button {
+                position: relative;
+
+                margin: 0;
+
+                border-color: #76a7e1;
+                box-shadow: none;
+                &:before {
+                    position: absolute;
+                    top: -12px;
+                    right: -14px;
+
+                    width: 30px;
+                    height: 30px;
+
+                    content: '';
+
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+                &:after {
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+
+                    content: "\f058";
+
+                    color: #76a7e1;
+
+                    font-family: "FontAwesome";
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

@@ -6,15 +6,262 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
-        <header>
-            <a role="button" href="#">Go Back</a>
-            <a href="#"><img src="src/img/logo-2x.png" alt="Logo" width="102"></a>
-            <a role="button" href="#">Sign In</a>
+        <header class="site-header">
+            <a role="button" href="#">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                Go Back
+            </a>
+            <a href="#">
+                <img src="src/img/logo-2x.png" alt="Logo" width="102">
+            </a>
+            <a role="button" href="#">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Sign In
+            </a>
         </header>
-        <main>
+        <main class="main-content">
+            <form>
+                <div class="header-wrapper">
+                    <section class="your-order-section">
+                        <div class="your-order-wrapper">
+                            <h2>Your Order</h2>
+                            <table class="your-order-parameters">
+                                <tr>
+                                    <th>Items</th>
+                                    <th>Details</th>
+                                    <th>Price</th>
+                                    <th>Delivery</th>
+                                </tr>
+                                <tr>
+                                    <td>2 documents</td>
+                                    <td>2 languages</td>
+                                    <td>$ 696.06</td>
+                                    <td>48 hours<sup>*</sup></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <fieldset class="your-order-buttons">
+                            <button type="button" class="place-order">Place Oreder</button>
+                            <button type="button" class="print-a-quote">Print a Quote</button>
+                        </fieldset>
+                    </section>
+                    <section class="help-center-section">
+                        <h2>Help Center</h2>
+                        <p>
+                            If you need assistance while placing your order, contact
+                            one of our beloved Project Manager by phone or email.
+                        </p>
+                        <footer class="contacts">
+                            <a href="tel:+9710555555">+971 (0) 555 555</a>
+                            <a href="mailto:help@qtest.com">help@qtest.com</a>
+                        </footer>
+                    </section>
+                </div>
+                <section class="select-what-translate">
+                    <h2>Select what you want to translate</h2>
+                    <fieldset class="choose-translate-type">
+                        <div class="switch-buttons-wrapper">
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type">
+                                <a role="button" class="button">
+                                    <img src="src/img/website-2x.png" alt="Website" width="96" class="image">
+                                    <span class="description">Website</span>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type" checked>
+                                <a role="button" class="button">
+                                    <img src="src/img/documents-2x.png" alt="Documents" width="96" class="image">
+                                    <span class="description">Documents</span>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type">
+                                <a role="button" class="button">
+                                    <img src="src/img/social-account-2x.png" alt="Social Account" width="96" class="image">
+                                    <span class="description">Social Account</span>
+                                </a>
+                            </label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="upload-documents-section">
+                    <h2 class="section-header">Upload your documents</h2>
+                    <small>(Doc, Docx, Text, PDF, Markdown)</small>
+                    <label role="button" class="upload-file-btn">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                        Upload a new file
+                        <input type="file" class="upload-file">
+                    </label>
+                    <table class="uploaded-files">
+                        <tr>
+                            <th>File Name</th>
+                            <th>File Size</th>
+                            <th>Number of Words</th>
+                            <th>Remove</th>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-file-text" aria-hidden="true"></i>business_operations.docx</td>
+                            <td>78kb</td>
+                            <td>842</td>
+                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-file-text" aria-hidden="true"></i>business_financial.docx</td>
+                            <td>26kb</td>
+                            <td>2,326</td>
+                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="languages-pairings-section">
+                    <h2 class="section-header">Choose your languages pairings</h2>
+                    <fieldset class="language-from">
+                        <span class="language-prefix">From</span>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US" selected>English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE">Arabic</option>
+                                <option value="ku-Arab">Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="language-to">
+                        <span class="language-prefix">to</span>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US">English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE" selected>Arabic</option>
+                                <option value="ku-Arab">Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US">English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE">Arabic</option>
+                                <option value="ku-Arab" selected>Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <button type="button" class="add-language">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            add
+                        </button>
+                    </fieldset>
+                </section>
+                <div class="section-wrapper">
+                    <section class="select-tone-section">
+                        <h2 class="section-header">Select your desired tone</h2>
+                        <fieldset class="select-tone-type">
+                            <div class="switch-buttons-wrapper">
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type">
+                                    <a role="button" class="button">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                        Friendly &frasl; Casual
+                                    </a>
+                                </label>
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type" checked>
+                                    <a role="button" class="button">
+                                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                        Corporate &frasl; Pro
+                                    </a>
+                                </label>
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type">
+                                    <a role="button" class="button">
+                                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                        Media &frasl; Formal
+                                    </a>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="how-urgent-job-section">
+                        <h2 class="section-header">Tell us how urgent this job is</h2>
+                        <div class="timeline-selector-wrapper">
+                            <input type="range" min="0" max="2" value="1" class="timeline-selector">
+                            <div class="timeline-labels">
+                                <span class="timeline-label">I got time</span>
+                                <span class="timeline-label active">Average</span>
+                                <span class="timeline-label">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="timeline-info">
+                            <h2>Timelinr Info</h2>
+                            <p>
+                                With an <em>average</em> timeline set up, our expert
+                                translator can take a resonable amount of time
+                                perfecting your translation
+                            </p>
 
+                        </div>
+                    </section>
+                </div>
+                <section class="choose-payment-method-section">
+                    <h2 class="section-header">Sign up and choose a payment method</h2>
+                    <aside class="sign-in-propose">Already have an account with us? <a href="#" class="link">Sign in</a></aside>
+                    <fieldset class="full-name-wrapper">
+                        <label>
+                            <span class="prefix">Full name</span>
+                            <input type="text" class="custom-input signup-full-name">
+                        </label>
+                    </fieldset>
+                    <fieldset class="email-password-wrapper">
+                        <label>
+                            <span class="prefix">Email adress</span>
+                            <input type="email" class="custom-input signup-email">
+                        </label>
+                        <label>
+                            <span class="prefix">Chose a password</span>
+                            <input type="password" class="custom-input signup-password">
+                        </label>
+                    </fieldset>
+                    <fieldset class="payment-method-wrapper">
+                        <div class="switch-buttons-wrapper">
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method">
+                                <a role="button" class="button">
+                                    <div class="button-image">
+                                        <img src="src/img/visa-2x.png" alt="Visa" width="40">
+                                        <img src="src/img/master-card-2x.png" alt="Master Card" width="40">
+                                    </div>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method" checked>
+                                <a role="button" class="button">
+                                    <img src="src/img/paypal-2x.png" alt="PayPal" width="78" class="button-image">
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method">
+                                <a role="button" class="button">
+                                    <img src="src/img/amazon-2x.png" alt="Amazon" width="106" class="button-image">
+                                </a>
+                            </label>
+                        </div>
+                    </fieldset>
+                </section>
+            </form>
         </main>
-        <footer>
+        <footer class="site-footer">
 
         </footer>
     </body>

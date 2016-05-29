@@ -64,6 +64,16 @@ module.exports = {
     },
     postcss: postCSSConfig,
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common',
+            async: true,
+            children: true,
+            minChunks: Infinity
+        }),
         new ExtractTextPlugin('css/[name].css', { allChunks: true }),
         new HtmlWebpackPlugin({
             template: 'index.html'

@@ -1,0 +1,86 @@
+:root {
+    --rangeBackground: #eff0f5;
+    --rangeThumbBackground: #edbe76;
+}
+input[type=range] {
+    height: 32px;
+
+    border: none;
+
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 9px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    background: var(--rangeBackground);
+}
+input[type=range]::-moz-range-track {
+    height: 9px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    background: var(--rangeBackground);
+}
+input[type=range]::-ms-track {
+    height: 9px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    border-radius: 5px;
+    background: var(--rangeBackground);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    width: 19px;
+    height: 19px;
+    margin-top: -5px;
+
+    border-radius: 50%;
+    background-color: var(--rangeThumbBackground);
+
+    -webkit-appearance: none;
+}
+input[type=range]::-moz-range-thumb {
+    width: 19px;
+    height: 19px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: var(--rangeThumbBackground);
+}
+input[type=range]::-ms-thumb {
+    width: 19px;
+    height: 19px;
+
+    border-radius: 50%;
+    background-color: var(--rangeThumbBackground);
+}
+
+input[type=range]::-ms-fill-lower {
+    background: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+	cursor: pointer;
+}
+input[type=range]::-moz-range-thumb:hover {
+	cursor: pointer;
+}
+input[type=range]::-ms-thumb:hover {
+	cursor: pointer;
+}
+
+input[type=range][disabled] {
+    opacity: 0.3;
+}

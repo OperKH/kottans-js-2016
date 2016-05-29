@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Interval Sans Pro';
+    src: url('intervalsanspro-regular.woff2') format('woff2'),
+         url('intervalsanspro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Interval Sans Pro';
+    src: url('intervalsanspro-bold.woff2') format('woff2'),
+         url('intervalsanspro-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
