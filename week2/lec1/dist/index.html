@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>a</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/kottans-js-2016/week2/lec1/dist/css/vendor.css" rel="stylesheet"><link href="/kottans-js-2016/week2/lec1/dist/css/app.css" rel="stylesheet"></head>
+    <body>
+        <header class="site-header">
+            <a role="button" href="#">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                Go Back
+            </a>
+            <a href="#">
+                <img src="/kottans-js-2016/week2/lec1/distimages/logo-2x.png" alt="Logo" width="102" height="102">
+            </a>
+            <a role="button" href="#">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Sign In
+            </a>
+        </header>
+        <main class="main-content">
+            <form action="#">
+                <div class="header-wrapper">
+                    <section class="your-order-section">
+                        <div class="your-order-wrapper">
+                            <h2>Your Order</h2>
+                            <table class="your-order-parameters">
+                                <tr>
+                                    <th>Items</th>
+                                    <th>Details</th>
+                                    <th>Price</th>
+                                    <th>Delivery</th>
+                                </tr>
+                                <tr>
+                                    <td>2 documents</td>
+                                    <td>2 languages</td>
+                                    <td>$ 696.06</td>
+                                    <td>48 hours<sup>*</sup></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <fieldset class="your-order-buttons">
+                            <button type="submit" class="place-order">Place Oreder</button>
+                            <button type="button" class="print-a-quote">Print a Quote</button>
+                        </fieldset>
+                    </section>
+                    <section class="help-center-section">
+                        <h2>Help Center</h2>
+                        <p>
+                            If you need assistance while placing your order, contact
+                            one of our beloved Project Manager by phone or email.
+                        </p>
+                        <footer class="contacts">
+                            <a href="tel:+9710555555">+971 (0) 555 555</a>
+                            <a href="mailto:help@qtest.com">help@qtest.com</a>
+                        </footer>
+                    </section>
+                </div>
+                <section class="select-what-translate">
+                    <h2>Select what you want to translate</h2>
+                    <fieldset class="choose-translate-type">
+                        <div class="switch-buttons-wrapper">
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type">
+                                <a role="button" class="button">
+                                    <img src="/kottans-js-2016/week2/lec1/distimages/website-2x.png" alt="Website" width="96" height="108" class="image">
+                                    <span class="description">Website</span>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type" checked>
+                                <a role="button" class="button">
+                                    <img src="/kottans-js-2016/week2/lec1/distimages/documents-2x.png" alt="Documents" width="96" height="108" class="image">
+                                    <span class="description">Documents</span>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="translate-type">
+                                <a role="button" class="button">
+                                    <img src="/kottans-js-2016/week2/lec1/distimages/social-account-2x.png" alt="Social Account" width="96" height="108" class="image">
+                                    <span class="description">Social Account</span>
+                                </a>
+                            </label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="upload-documents-section">
+                    <h2 class="section-header">Upload your documents</h2>
+                    <small>(Doc, Docx, Text, PDF, Markdown)</small>
+                    <label class="upload-file-btn">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                        Upload a new file
+                        <input type="file" class="upload-file">
+                    </label>
+                    <table class="uploaded-files">
+                        <tr>
+                            <th>File Name</th>
+                            <th>File Size</th>
+                            <th>Number of Words</th>
+                            <th>Remove</th>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-file-text" aria-hidden="true"></i>business_operations.docx</td>
+                            <td>78kb</td>
+                            <td>842</td>
+                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-file-text" aria-hidden="true"></i>business_financial.docx</td>
+                            <td>26kb</td>
+                            <td>2,326</td>
+                            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="languages-pairings-section">
+                    <h2 class="section-header">Choose your languages pairings</h2>
+                    <fieldset class="language-from">
+                        <span class="language-prefix">From</span>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US" selected>English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE">Arabic</option>
+                                <option value="ku-Arab">Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="language-to">
+                        <span class="language-prefix">to</span>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US">English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE" selected>Arabic</option>
+                                <option value="ku-Arab">Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                        <div class="select-wrapper">
+                            <select class="language">
+                                <option value="en-US">English</option>
+                                <option value="de-DE">German</option>
+                                <option value="fr-FR">French</option>
+                                <option value="es-ES">Spanish</option>
+                                <option value="ar-AE">Arabic</option>
+                                <option value="ku-Arab" selected>Kurdish</option>
+                                <option value="he-IL">Hebrew</option>
+                                <option value="ru-RU">Russian</option>
+                            </select>
+                        </div>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <button type="button" class="add-language">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            add
+                        </button>
+                    </fieldset>
+                </section>
+                <div class="section-wrapper">
+                    <section class="select-tone-section">
+                        <h2 class="section-header">Select your desired tone</h2>
+                        <fieldset class="select-tone-type">
+                            <div class="switch-buttons-wrapper">
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type">
+                                    <a role="button" class="button">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                        Friendly &frasl; Casual
+                                    </a>
+                                </label>
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type" checked>
+                                    <a role="button" class="button">
+                                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                        Corporate &frasl; Pro
+                                    </a>
+                                </label>
+                                <label class="button-holder">
+                                    <input type="radio" name="tone-type">
+                                    <a role="button" class="button">
+                                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                        Media &frasl; Formal
+                                    </a>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="how-urgent-job-section">
+                        <h2 class="section-header">Tell us how urgent this job is</h2>
+                        <div class="timeline-selector-wrapper">
+                            <input type="range" min="0" max="2" value="1" class="timeline-selector">
+                            <div class="timeline-labels">
+                                <span class="timeline-label">I got time</span>
+                                <span class="timeline-label active">Average</span>
+                                <span class="timeline-label">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="timeline-info">
+                            <h2>Timelinr Info</h2>
+                            <p>
+                                With an <em>average</em> timeline set up, our expert
+                                translator can take a resonable amount of time
+                                perfecting your translation
+                            </p>
+
+                        </div>
+                    </section>
+                </div>
+                <section class="choose-payment-method-section">
+                    <h2 class="section-header">Sign up and choose a payment method</h2>
+                    <aside class="sign-in-propose">Already have an account with us? <a href="#" class="link">Sign in</a></aside>
+                    <fieldset class="full-name-wrapper">
+                        <label>
+                            <span class="prefix">Full name</span>
+                            <input type="text" class="custom-input signup-full-name" required>
+                            <span class="validation">&nbsp;</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="email-password-wrapper">
+                        <label>
+                            <span class="prefix">Email adress</span>
+                            <input type="email" class="custom-input signup-email" required>
+                            <span class="validation">&nbsp;</span>
+                        </label>
+                        <label>
+                            <span class="prefix">Chose a password</span>
+                            <input type="password" class="custom-input signup-password" required>
+                            <span class="validation">&nbsp;</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="payment-method-wrapper">
+                        <div class="switch-buttons-wrapper">
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method">
+                                <a role="button" class="button">
+                                    <span class="button-image">
+                                        <img src="/kottans-js-2016/week2/lec1/distimages/visa-2x.png" alt="Visa" width="40" height="25">
+                                        <img src="/kottans-js-2016/week2/lec1/distimages/master-card-2x.png" alt="Master Card" width="40" height="25">
+                                    </span>
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method" checked>
+                                <a role="button" class="button">
+                                    <img src="/kottans-js-2016/week2/lec1/distimages/paypal-2x.png" alt="PayPal" width="78" height="22" class="button-image">
+                                </a>
+                            </label>
+                            <label class="button-holder">
+                                <input type="radio" name="payment-method">
+                                <a role="button" class="button">
+                                    <img src="/kottans-js-2016/week2/lec1/distimages/amazon-2x.png" alt="Amazon" width="106" height="22" class="button-image">
+                                </a>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="card-data-wrapper">
+                        <label class="card-field-holder signup-card-number-holder">
+                            <span class="prefix">Card number</span>
+                            <input type="number" class="custom-input signup-card-number" required>
+                        </label>
+                        <label class="card-field-holder">
+                            <span class="prefix">Expiry date</span>
+                            <input type="date" class="custom-input signup-card-expiry-date" required>
+                        </label>
+                        <label class="card-field-holder">
+                            <span class="prefix">Code</span>
+                            <input type="number" class="custom-input signup-card-code" min="0" max="999" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="submit-wrapper">
+                        <fieldset class="submit-elements-wrapper">
+                            <label>
+                                <input type="checkbox" class="agree-checkbox" required>
+                                <span class="agree-text">I agree to the</span>
+                            </label>
+                            <a href="#" class="terms-and-conditions">Terms &amp; Conditions</a>
+                        </fieldset>
+                        <fieldset class="submit-elements-wrapper">
+                            <button type="submit" class="place-order">Place Oreder</button>
+                            <button type="button" class="print-a-quote">Print a Quote</button>
+                        </fieldset>
+                    </fieldset>
+                </section>
+            </form>
+        </main>
+        <footer class="site-footer">
+            <section class="what-we-do">
+                <h2 class="section-header">What We Do</h2>
+                <strong class="what-we-do-text">
+                    We provide a full range of language services including content development,
+                    document, website and social media accounts translations
+                </strong>
+            </section>
+            <section class="our-main-office">
+                <h2 class="section-header">Our Main Office</h2>
+                <address class="address">
+                    <p>Dubai, UAE</p>
+                    <p>P.O. Box: 502735</p>
+                    <p><a href="tel:+971044278128">+971 (0) 44278128</a></p>
+                </address>
+            </section>
+            <section class="connect-with-us">
+                <h2 class="section-header">Connect With Us</h2>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <img src="/kottans-js-2016/week2/lec1/distimages/logo-footer-2x.png" alt="Logo" width="102" height="102" class="footer-logo">
+        </footer>
+    <script type="text/javascript" src="/kottans-js-2016/week2/lec1/dist/js/common.js"></script><script type="text/javascript" src="/kottans-js-2016/week2/lec1/dist/js/vendor.js"></script><script type="text/javascript" src="/kottans-js-2016/week2/lec1/dist/js/app.js"></script></body>
+</html>
