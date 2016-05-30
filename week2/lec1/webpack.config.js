@@ -29,7 +29,8 @@ module.exports = {
     },
     output: {
         path: require('path').resolve('dist'),
-        publicPath: '/kottans-js-2016/week2/lec1/dist/',
+        publicPath: '/',
+        // publicPath: '/kottans-js-2016/week2/lec1/dist/',
         filename: 'js/[name].js'
     },
     module: {
