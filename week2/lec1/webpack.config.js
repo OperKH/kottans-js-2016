@@ -29,7 +29,7 @@ module.exports = {
     },
     output: {
         path: require('path').resolve('dist'),
-        publicPath: '/',
+        publicPath: '/kottans-js-2016/week2/lec1/dist',
         filename: 'js/[name].js'
     },
     module: {
@@ -64,15 +64,12 @@ module.exports = {
     },
     postcss: postCSSConfig,
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'common'
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            async: true,
-            children: true,
-            minChunks: Infinity
         }),
         new ExtractTextPlugin('css/[name].css', { allChunks: true }),
         new HtmlWebpackPlugin({
