@@ -2,7 +2,7 @@
     position: relative;
 
     display: inline-block;
-    &:before {
+    &::before {
         position: absolute;
         top: 0;
         right: 50px;
@@ -14,7 +14,7 @@
 
         background-color: #d7d8e0;
     }
-    &:after {
+    &::after {
         position: absolute;
         top: calc(50% - 4px);
         right: calc(25px - 4px);

@@ -49,6 +49,7 @@ html {
     }
 }
 
+.upload-file-btn,
 :--button {
     padding: 16px 36px;
 
@@ -85,6 +86,19 @@ html {
     }
 }
 
+.place-order {
+    margin-bottom: 12px;
+
+    color: #fff;
+    border-color: #54aca9;
+    background-color: #5fcac6;
+}
+.print-a-quote {
+    color: #d7d8e0;
+    border-color: #d7d8e0;
+    background-color: #f7f7fa;
+}
+
 .main-content {
     margin-bottom: 128px;
 
@@ -112,7 +126,7 @@ html {
                 color: var(--mainTextColorHeading);
 
                 font-size: 18px;
-                &:before {
+                &::before {
                     position: absolute;
                     left: calc(-30px - 0.5em);
 
@@ -131,7 +145,7 @@ html {
             flex-grow: 2;
             justify-content: space-between;
             h2 {
-                &:before {
+                &::before {
                     content: "\f0b1";
                 }
             }
@@ -139,9 +153,8 @@ html {
                 flex-grow: 1;
                 .your-order-parameters {
                     width: 100%;
-
-                    text-align: left;
                     th {
+                        text-align: left;
                         text-transform: uppercase;
 
                         color: var(--mainTextColorHeading);
@@ -156,24 +169,12 @@ html {
                 .print-a-quote {
                     display: block;
                 }
-                .place-order {
-                    margin-bottom: 12px;
-
-                    color: #fff;
-                    border-color: #54aca9;
-                    background-color: #5fcac6;
-                }
-                .print-a-quote {
-                    color: #d7d8e0;
-                    border-color: #d7d8e0;
-                    background-color: #f7f7fa;
-                }
             }
         }
         .help-center-section {
             flex-grow: 1;
             h2 {
-                &:before {
+                &::before {
                     content: "\f1cd";
                 }
             }
@@ -238,7 +239,7 @@ html {
             margin-bottom: 50px;
 
             font-weight: normal;
-            &:before {
+            &::before {
                 position: absolute;
                 top: calc(50% - 1em);
                 left: -3em;
@@ -278,8 +279,6 @@ html {
             width: 100%;
             padding: 20px 30px;
 
-            text-align: left;
-
             border: 1px solid #e6e8ee;
             border-radius: 4px;
             .fa-trash {
@@ -288,6 +287,7 @@ html {
                 font-size: 1.3em;
             }
             th {
+                text-align: left;
                 text-transform: uppercase;
 
                 font-weight: normal;
@@ -333,6 +333,7 @@ html {
         .select-wrapper {
             margin-right: 25px;
             margin-left: 25px;
+            margin-bottom: 25px;
         }
         .add-language {
             margin-right: 25px;
@@ -391,7 +392,7 @@ html {
                 color: #727895;
 
                 font-weight: normal;
-                &:before {
+                &::before {
                     position: absolute;
                     left: calc(-24px - 0.5em);
 
@@ -422,13 +423,16 @@ html {
         .email-password-wrapper {
             margin-bottom: 60px;
         }
+        .card-data-wrapper,
         .full-name-wrapper,
         .email-password-wrapper {
             label {
                 display: inline-block;
                 .prefix {
                     display: block;
+
                     padding: 10px;
+
                     text-transform: uppercase;
                 }
             }
@@ -438,6 +442,35 @@ html {
                 margin-right: 30px;
             }
         }
+        .signup-full-name,
+        .signup-email,
+        .signup-password {
+            position: relative;
+            &:valid + .validation,
+            &:invalid + .validation {
+                position: relative;
+                display: inline-block;
+                line-height: 50px;
+                &::after {
+                    position: absolute;
+                    left: -40px;
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                }
+            }
+            &:invalid + .validation {
+                &::after {
+                    content: "\f057";
+                    color: #e17776;
+                }
+            }
+            &:valid + .validation {
+                &::after {
+                    content: "\f058";
+                    color: #76a7e1;
+                }
+            }
+        }
         .payment-method-wrapper {
             margin-bottom: 76px;
             .switch-buttons-wrapper {
@@ -445,30 +478,191 @@ html {
                 .button-holder {
                     margin-right: 30px;
                     .button {
+                        display: flex;
+
                         width: 150px;
                         height: 75px;
-                        display: flex;
                         .button-image {
                             margin: auto;
+
                             letter-spacing: 1rem;
                         }
                     }
                 }
             }
         }
+        .card-data-wrapper {
+            margin-bottom: 100px;
+            .card-field-holder {
+                margin-right: 30px;
+            }
+            .signup-card-number-holder {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+
+                    content: "\f1f0";
+
+                    font-family: "FontAwesome";
+                    font-size: 30px;
+                }
+            }
+            .signup-card-number {
+                width: 380px;
+                padding-right: 56px;
+            }
+            .signup-card-expiry-date {
+                width: 170px;
+                padding-right: 15px;
+
+                text-align: center;
+            }
+            .signup-card-code {
+                width: 100px;
+                padding-right: 15px;
+            }
+        }
+        .submit-wrapper {
+            text-align: right;
+            .agree-checkbox {
+                display: none;
+            }
+            .agree-text {
+                position: relative;
+                &::before {
+                    display: inline-block;
+
+                    width: 1.2em;
+                    height: 1.2em;
+                    margin-top: -3px;
+                    margin-right: 15px;
+
+                    content: "";
+                    vertical-align: middle;
+
+                    border: 1px solid #7a7e9177;
+                    border-radius: 4px;
+                    background: linear-gradient(180deg,                                rgba(215,239,255,1) 2%,                                rgba(210,230,252,1) 13%,                                rgba(155,201,243,1) 45%,                                rgba(128,190,244,1) 53%,                                rgba(200,240,253,1) 90%,                                rgba(206,245,254,1) 93%);
+                    background-color: red;
+                    box-shadow: 0 0 16px -1px #7a7e91;                }
+            }
+            .submit-elements-wrapper {
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+            .agree-checkbox:checked + .agree-text {
+                &::after {
+                    position: absolute;
+                    top: -6px;
+                    left: 2px;
+
+                    content: "\F00C";
+
+                    color: #041f39aa;
+
+                    font-family: "FontAwesome";
+                    font-size: 23px;
+                }
+            }
+            .terms-and-conditions {
+                margin-right: 40px;
+
+                text-decoration: underline;
+            }
+            .place-order {
+                margin-right: 30px;
+            }
+        }
     }
 }
 
 .site-footer {
-    height: 290px;
+    display: flex;
 
+    padding: 100px;
+
+    color: #b3b9d7;
     background-color: var(--footerBackgroundColor);
+
+    justify-content: space-around;
+    .section-header {
+        position: relative;
+
+        display: inline-block;
+
+        font-weight: normal;
+        &::before {
+            position: absolute;
+            top: calc(50% - 0.5em);
+            left: -1.5em;
+
+            content: "";
+
+            font-family: "FontAwesome";
+            font-size: 1.3em;
+        }
+    }
+    .what-we-do {
+        flex-basis: 15%;
+        .section-header {
+            &::before {
+                content: "\f08a";
+            }
+        }
+        .what-we-do-text {
+            display: block;
+
+            font-weight: normal;
+            font-style: italic;
+        }
+
+    }
+    .our-main-office {
+        .section-header {
+            &::before {
+                content: "\f14e";
+            }
+        }
+        .address {
+            font-style: normal;
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+    .connect-with-us {
+        .section-header {
+            &::before {
+                content: "\f1e0";
+            }
+        }
+        .social {
+            margin: 0;
+            padding-left: 0;
+
+            list-style: none;
+            li {
+                margin-bottom: 10px;
+            }
+            .fa-stack {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 .link {
     text-decoration: underline;
 
     text-decoration-color: var(--mainTextColor);
+}
+
+form:invalid {
+    .place-order {
+        opacity: 0.7;
+    }
 }
 
 @media (width < 1024px) {
@@ -479,13 +673,37 @@ html {
                 border-right-width: 0;
             }
         }
+        .section-wrapper {
+            flex-wrap: wrap;
+        }
+        .choose-payment-method-section {
+            .submit-wrapper {
+                text-align: left;
+            }
+            .full-name-wrapper {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .site-footer {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 0;
+        .footer-logo,
+        .what-we-do,
+        .our-main-office,
+        .connect-with-us {
+            margin-bottom: 50px;
+            order: 2;
+        }
+        .footer-logo {
+            order: 1;
+        }
     }
 }
 
 @media (width < 768px) {
     .main-content {
-        .section-wrapper {
-            flex-wrap: wrap;
-        }
+
     }
 }

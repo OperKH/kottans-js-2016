@@ -20,7 +20,7 @@
             </a>
         </header>
         <main class="main-content">
-            <form>
+            <form action="#">
                 <div class="header-wrapper">
                     <section class="your-order-section">
                         <div class="your-order-wrapper">
@@ -41,7 +41,7 @@
                             </table>
                         </div>
                         <fieldset class="your-order-buttons">
-                            <button type="button" class="place-order">Place Oreder</button>
+                            <button type="submit" class="place-order">Place Oreder</button>
                             <button type="button" class="print-a-quote">Print a Quote</button>
                         </fieldset>
                     </section>
@@ -88,7 +88,7 @@
                 <section class="upload-documents-section">
                     <h2 class="section-header">Upload your documents</h2>
                     <small>(Doc, Docx, Text, PDF, Markdown)</small>
-                    <label role="button" class="upload-file-btn">
+                    <label class="upload-file-btn">
                         <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                         Upload a new file
                         <input type="file" class="upload-file">
@@ -220,17 +220,20 @@
                     <fieldset class="full-name-wrapper">
                         <label>
                             <span class="prefix">Full name</span>
-                            <input type="text" class="custom-input signup-full-name">
+                            <input type="text" class="custom-input signup-full-name" required>
+                            <span class="validation">&nbsp;</span>
                         </label>
                     </fieldset>
                     <fieldset class="email-password-wrapper">
                         <label>
                             <span class="prefix">Email adress</span>
-                            <input type="email" class="custom-input signup-email">
+                            <input type="email" class="custom-input signup-email" required>
+                            <span class="validation">&nbsp;</span>
                         </label>
                         <label>
                             <span class="prefix">Chose a password</span>
-                            <input type="password" class="custom-input signup-password">
+                            <input type="password" class="custom-input signup-password" required>
+                            <span class="validation">&nbsp;</span>
                         </label>
                     </fieldset>
                     <fieldset class="payment-method-wrapper">
@@ -238,10 +241,10 @@
                             <label class="button-holder">
                                 <input type="radio" name="payment-method">
                                 <a role="button" class="button">
-                                    <div class="button-image">
+                                    <span class="button-image">
                                         <img src="src/img/visa-2x.png" alt="Visa" width="40" height="25">
                                         <img src="src/img/master-card-2x.png" alt="Master Card" width="40" height="25">
-                                    </div>
+                                    </span>
                                 </a>
                             </label>
                             <label class="button-holder">
@@ -258,11 +261,85 @@
                             </label>
                         </div>
                     </fieldset>
+                    <fieldset class="card-data-wrapper">
+                        <label class="card-field-holder signup-card-number-holder">
+                            <span class="prefix">Card number</span>
+                            <input type="number" class="custom-input signup-card-number" required>
+                        </label>
+                        <label class="card-field-holder">
+                            <span class="prefix">Expiry date</span>
+                            <input type="date" class="custom-input signup-card-expiry-date" required>
+                        </label>
+                        <label class="card-field-holder">
+                            <span class="prefix">Code</span>
+                            <input type="number" class="custom-input signup-card-code" min="0" max="999" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="submit-wrapper">
+                        <fieldset class="submit-elements-wrapper">
+                            <label>
+                                <input type="checkbox" class="agree-checkbox" required>
+                                <span class="agree-text">I agree to the</span>
+                            </label>
+                            <a href="#" class="terms-and-conditions">Terms &amp; Conditions</a>
+                        </fieldset>
+                        <fieldset class="submit-elements-wrapper">
+                            <button type="submit" class="place-order">Place Oreder</button>
+                            <button type="button" class="print-a-quote">Print a Quote</button>
+                        </fieldset>
+                    </fieldset>
                 </section>
             </form>
         </main>
         <footer class="site-footer">
-
+            <section class="what-we-do">
+                <h2 class="section-header">What We Do</h2>
+                <strong class="what-we-do-text">
+                    We provide a full range of language services including content development,
+                    document, website and social media accounts translations
+                </strong>
+            </section>
+            <section class="our-main-office">
+                <h2 class="section-header">Our Main Office</h2>
+                <address class="address">
+                    <p>Dubai, UAE</p>
+                    <p>P.O. Box: 502735</p>
+                    <p><a href="tel:+971044278128">+971 (0) 44278128</a></p>
+                </address>
+            </section>
+            <section class="connect-with-us">
+                <h2 class="section-header">Connect With Us</h2>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <img src="src/img/logo-footer-2x.png" alt="Logo" width="102" height="102" class="footer-logo">
         </footer>
     </body>
 </html>

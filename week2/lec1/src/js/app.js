@@ -9,11 +9,16 @@ import '../css/app.css';
         $timelineLabel.removeClass('active');
         var selectedLabel = $timelineLabel.get(selectedIndex);
         $(selectedLabel).addClass('active');
-    })
-    $timelineLabels.on('click', '.timeline-label', function(e) {
-        const index = $timelineLabel.index(this)
+    });
+    $timelineLabels.on('click', '.timeline-label', function() {
+        const index = $timelineLabel.index(this);
         $timelineSelector.val(index);
         $timelineLabel.removeClass('active');
         $(this).addClass('active');
-    })
+    });
+    initTimelineSelector();
+    function initTimelineSelector() {
+        const value = $timelineSelector.attr('value');
+        $timelineSelector.val(value).change();
+    }
 })();

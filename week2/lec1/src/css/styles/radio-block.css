@@ -22,7 +22,7 @@
 
                 border-color: #76a7e1;
                 box-shadow: none;
-                &:before {
+                &::before {
                     position: absolute;
                     top: -12px;
                     right: -14px;
@@ -35,7 +35,7 @@
                     border-radius: 50%;
                     background-color: #fff;
                 }
-                &:after {
+                &::after {
                     position: absolute;
                     top: -15px;
                     right: -15px;
