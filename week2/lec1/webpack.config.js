@@ -25,7 +25,7 @@ var postCSSConfig = function(webpack) {
 module.exports = {
     entry: {
         vendor: ['./src/js/vendor.js'],
-        app: ['./src/js/app.js', './index.html']
+        app: ['./src/js/app.js']
     },
     output: {
         path: require('path').resolve('dist'),
