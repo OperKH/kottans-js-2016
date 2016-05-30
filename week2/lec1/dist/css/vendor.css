@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Interval Sans Pro';
-    src: url(/kottans-js-2016/week2/lec1/distcss/fonts/intervalsanspro-regular.woff2) format('woff2'),
-         url(/kottans-js-2016/week2/lec1/distcss/fonts/intervalsanspro-regular.woff) format('woff');
+    src: url(/kottans-js-2016/week2/lec1/dist/css/fonts/intervalsanspro-regular.woff2) format('woff2'),
+         url(/kottans-js-2016/week2/lec1/dist/css/fonts/intervalsanspro-regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Interval Sans Pro';
-    src: url(/kottans-js-2016/week2/lec1/distcss/fonts/intervalsanspro-bold.woff2) format('woff2'),
-         url(/kottans-js-2016/week2/lec1/distcss/fonts/intervalsanspro-bold.woff) format('woff');
+    src: url(/kottans-js-2016/week2/lec1/dist/css/fonts/intervalsanspro-bold.woff2) format('woff2'),
+         url(/kottans-js-2016/week2/lec1/dist/css/fonts/intervalsanspro-bold.woff) format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -20,8 +20,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.eot);
-  src: url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.woff2) format('woff2'), url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.woff) format('woff'), url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.ttf) format('truetype'), url(/kottans-js-2016/week2/lec1/distcss/fonts/fontawesome-webfont.svg#fontawesomeregular) format('svg');
+  src: url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.eot);
+  src: url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.woff2) format('woff2'), url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.woff) format('woff'), url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.ttf) format('truetype'), url(/kottans-js-2016/week2/lec1/dist/css/fonts/fontawesome-webfont.svg#fontawesomeregular) format('svg');
   font-weight: normal;
   font-style: normal;
 }

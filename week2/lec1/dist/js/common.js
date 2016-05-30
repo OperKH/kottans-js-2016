@@ -88,7 +88,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/kottans-js-2016/week2/lec1/dist";
+/******/ 	__webpack_require__.p = "/kottans-js-2016/week2/lec1/dist/";
 /******/ })
 /************************************************************************/
 /******/ ({
