@@ -7,5 +7,8 @@
 * [habrahabr-markup](https://github.com/OperKH/kottans-js-2016/tree/master/week1/lec1)
 * [Плагин для posthtml](https://github.com/OperKH/kottans-js-2016/tree/master/week1/lec2/posthtml-plugin)
 
-## [week2](https://github.com/OperKH/kottans-js-2016/tree/master/week1)
+## [week2](https://github.com/OperKH/kottans-js-2016/tree/master/week2)
 * [Верстка формочки](https://github.com/OperKH/kottans-js-2016/tree/master/week2/lec1)
+
+## [week3](https://github.com/OperKH/kottans-js-2016/tree/master/week3)
+* [deepAssign](https://github.com/OperKH/kottans-js-2016/tree/master/week3/lec1)
