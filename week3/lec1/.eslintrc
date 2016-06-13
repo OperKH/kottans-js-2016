@@ -1,0 +1,13 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "semi": [1, "always"],
+    "no-debugger": 1,
+    "no-console": 0,
+    "no-unused-vars": 1
+  }
+}
