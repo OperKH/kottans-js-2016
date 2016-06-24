@@ -1,0 +1,18 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "semi": [1, "always"],
+    "no-debugger": 1,
+    "no-unused-vars": 0,
+    "no-undef": 1,
+    "no-console": 0
+  }
+}
