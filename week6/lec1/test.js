@@ -39,5 +39,9 @@ test('Should handle delimiters of any length', t => {
 });
 
 test('Should handle multiple delimiters', t => {
-    t.is(add('//[a][%]\n4a7%9'), 20);
+    t.is(add('//[*][%]\n4*7%9'), 20);
+});
+
+test('Should handle multiple delimiters with length longer than one char', t => {
+    t.is(add('//[***][%%%%][}{]\n4***7%%%%9}{13'), 33);
 });
