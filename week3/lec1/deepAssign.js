@@ -19,7 +19,10 @@
             sources.forEach(from => {
                 if (from === Object(from)) {
                     Reflect.ownKeys(from).forEach(key => {
-                        if (isEnumerable.call(from, key)) {
+                        const ownPropertyDescriptor = Reflect.getOwnPropertyDescriptor(from, key);
+                        if (ownPropertyDescriptor.get || ownPropertyDescriptor.set) {
+                            Object.defineProperty(to, key, ownPropertyDescriptor);
+                        } else if (isEnumerable.call(from, key)) {
                             const fromValue = from[key];
                             if (fromValue === Object(fromValue)) {
                                 const fromValueConstructorName = fromValue.constructor.name;
@@ -27,17 +30,15 @@
                                     case 'Object':
                                         Object.deepAssign(Object(to[key]), fromValue);
                                         break;
-                                    case 'function':
-                                        to[key] = fromValueConstructorName();
+                                    case 'Function':
+                                        to[key] = fromValue;
                                         break;
                                     default:
-                                        to[key] = new fromValue.constructor(fromValue)
-
+                                        to[key] = new fromValue.constructor(fromValue);
                                 }
                             } else {
-                                to[key] = fromValue
+                                to[key] = fromValue;
                             }
-
                         }
                     });
                 }
