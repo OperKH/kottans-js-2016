@@ -1,0 +1,8 @@
+{
+    "webServer": {
+        "config": {
+            "host": "localhost",
+            "port": 5000
+        }
+    }
+}
