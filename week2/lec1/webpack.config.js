@@ -9,16 +9,12 @@ var postcssUrl =  require("postcss-url");
 var nested = require('postcss-nested');
 var cssnext = require('postcss-cssnext');
 
-var autoprefixer = require('autoprefixer');
-var csswring = require("csswring")
-
-var postCSSConfig = function(webpack) {
+var postCSSConfig = function() {
     return [
         postcssImport({ addDependencyTo: webpack }),
         postcssUrl,
         nested,
-        cssnext,
-        autoprefixer({ browsers: ['last 3 versions'] })
+        cssnext({ browsers: ['last 3 versions'] })
     ];
 };
 
